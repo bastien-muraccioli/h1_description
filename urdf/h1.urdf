@@ -22,7 +22,7 @@ Stephen Brawner (brawner@gmail.com)
         xyz="-0.0002 4E-05 -0.04522"
         rpy="0 0 0" />
       <mass
-        value="5.39" />
+        value="8.3" /> <!-- 5.39 + 4.61 - 1.7 -->
       <inertia
         ixx="0.044582"
         ixy="8.7034E-05"
@@ -169,7 +169,7 @@ Stephen Brawner (brawner@gmail.com)
         xyz="0.00746 -0.02346 -0.08193"
         rpy="0 0 0" />
       <mass
-        value="4.152" />
+        value="6.1" /> <!-- before 4.152 -->
       <inertia
         ixx="0.082618"
         ixy="-0.00066654"
@@ -224,7 +224,7 @@ Stephen Brawner (brawner@gmail.com)
         xyz="-0.00136 -0.00512 -0.1384"
         rpy="0 0 0" />
       <mass
-        value="1.721" />
+        value="2.3" />
       <inertia
         ixx="0.012205"
         ixy="-6.8431E-05"
@@ -303,9 +303,13 @@ Stephen Brawner (brawner@gmail.com)
       </material>
     </visual>
     <collision>
-      <origin xyz="0.05 0.0 -0.05" rpy="0 0 0" />
+      <!-- <origin xyz="0.0 0.0 -0.0" rpy="0 0 0" />
       <geometry>
-        <box size="0.28 0.03 0.024"/>
+        <mesh filename="unitree_h1/meshes/left_ankle_link.dae" />
+      </geometry> -->
+      <origin xyz="0.05 0.0 -0.057" rpy="0 0 0" /> 
+      <geometry> 
+        <box size="0.29 0.03 0.024"/>
       </geometry>
     </collision>
   </link>
@@ -444,7 +448,7 @@ Stephen Brawner (brawner@gmail.com)
         xyz="0.00746 0.02346 -0.08193"
         rpy="0 0 0" />
       <mass
-        value="4.152" />
+        value="6.1" /> <!-- before 4.152 -->
       <inertia
         ixx="0.082618"
         ixy="0.00066654"
@@ -499,7 +503,7 @@ Stephen Brawner (brawner@gmail.com)
         xyz="-0.00136 0.00512 -0.1384"
         rpy="0 0 0" />
       <mass
-        value="1.721" />
+        value="2.3" />
       <inertia
         ixx="0.012205"
         ixy="6.8431E-05"
@@ -578,9 +582,9 @@ Stephen Brawner (brawner@gmail.com)
       </material>
     </visual>
     <collision>
-      <origin xyz="0.05 0.0 -0.05" rpy="0 0 0" />
+      <origin xyz="0.05 0.0 -0.057" rpy="0 0 0" />
       <geometry>
-        <box size="0.28 0.03 0.024"/>
+        <box size="0.29 0.03 0.024"/>
       </geometry>
     </collision>
   </link>
@@ -609,7 +613,7 @@ Stephen Brawner (brawner@gmail.com)
         xyz="0.000489 0.002797 0.20484"
         rpy="0 0 0" />
       <mass
-        value="17.789" />
+        value="20.8" /> <!-- 17.789 + 3.711 - 0.7 -->
       <inertia
         ixx="0.4873"
         ixy="-0.00053763"
@@ -1109,6 +1113,8 @@ Stephen Brawner (brawner@gmail.com)
     <child
       link="imu_link" />
   </joint>
+  
+  <!--
   <link
     name="logo_link">
     <visual>
@@ -1259,8 +1265,74 @@ Stephen Brawner (brawner@gmail.com)
       link="mid360_link" />
     <axis
       xyz="0 0 0" />
-  </joint>
+  </joint> -->
 
+<!--  <link name="left_toes_link">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere
+          radius="0.02" />
+      </geometry>
+      <material
+        name="mat_toe">
+        <color
+          rgba="0.7 0.0 0.0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.04 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.11 0.03 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_toes_joint"
+    type="fixed">
+    <origin
+      xyz="0.18 0 -0.06"
+      rpy="0 0 0" />
+    <parent
+      link="left_ankle_link" />
+    <child
+      link="left_toes_link" />
+  </joint> -->
 
+  <!-- <link name="right_toes_link">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <sphere
+          radius="0.02" />
+      </geometry>
+      <material
+        name="mat_toe">
+        <color
+          rgba="0.7 0.0 0.0 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.04 0.0 0.0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.11 0.03 0.02"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_toes_joint"
+    type="fixed">
+    <origin
+      xyz="0.18 0 -0.06"
+      rpy="0 0 0" />
+    <parent
+      link="right_ankle_link" />
+    <child
+      link="right_toes_link" />
+  </joint> -->
   
 </robot>
