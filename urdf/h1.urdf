@@ -881,6 +881,13 @@ Stephen Brawner (brawner@gmail.com)
       effort="18"
       velocity="20" />
   </joint>
+  <link name="left_hand_link"/>
+  <joint name="left_hand_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.2605 0 -0.0185"/>
+    <parent link="left_elbow_link"/>
+    <child link="left_hand_link"/>
+    <axis xyz="1 0 0"/>
+  </joint>
   <link
     name="right_shoulder_pitch_link">
     <inertial>
@@ -1100,6 +1107,13 @@ Stephen Brawner (brawner@gmail.com)
       upper="2.61"
       effort="18"
       velocity="20" />
+  </joint>
+  <link name="right_hand_link"/>
+  <joint name="right_hand_joint" type="fixed">
+    <origin rpy="0 0 0" xyz="0.2605 0 -0.0185"/>
+    <parent link="right_elbow_link"/>
+    <child link="right_hand_link"/>
+    <axis xyz="1 0 0"/>
   </joint>
   <link name="imu_link"></link>
   <joint
