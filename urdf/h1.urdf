@@ -45,12 +45,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <sphere radius="0.05"/>
-      </geometry>
-    </collision>
   </link>
   <link
     name="left_hip_yaw_link">
@@ -82,12 +76,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-        <collision>
-      <origin xyz="0.02 0 0" rpy="0 1.5707963267948966192313216916398 0" />
-      <geometry>
-        <cylinder radius="0.01" length="0.02"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="left_hip_yaw_joint"
@@ -137,12 +125,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0.06 0" rpy="1.5707963267948966192313216916398 0 0" />
-      <geometry>
-        <cylinder radius="0.02" length="0.01"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="left_hip_roll_joint"
@@ -192,12 +174,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.2" rpy="0 0 0" />
-      <geometry>
-        <cylinder radius="0.05" length="0.2"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="left_hip_pitch_joint"
@@ -247,12 +223,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.2" rpy="0 0 0" />
-      <geometry>
-        <cylinder radius="0.05" length="0.2"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="left_knee_joint"
@@ -302,16 +272,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <!-- <origin xyz="0.0 0.0 -0.0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="unitree_h1/meshes/left_ankle_link.dae" />
-      </geometry> -->
-      <origin xyz="0.05 0.0 -0.057" rpy="0 0 0" /> 
-      <geometry> 
-        <box size="0.29 0.03 0.024"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="left_ankle_joint"
@@ -361,12 +321,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-        <collision>
-      <origin xyz="0.02 0 0" rpy="0 1.5707963267948966192313216916398 0" />
-      <geometry>
-        <cylinder radius="0.01" length="0.02"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="right_hip_yaw_joint"
@@ -416,12 +370,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 -0.06 0" rpy="1.5707963267948966192313216916398 0 0" />
-      <geometry>
-        <cylinder radius="0.02" length="0.01"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="right_hip_roll_joint"
@@ -471,12 +419,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.2" rpy="0 0 0" />
-      <geometry>
-        <cylinder radius="0.05" length="0.2"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="right_hip_pitch_joint"
@@ -526,12 +468,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.2" rpy="0 0 0" />
-      <geometry>
-        <cylinder radius="0.05" length="0.2"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="right_knee_joint"
@@ -581,12 +517,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.05 0.0 -0.057" rpy="0 0 0" />
-      <geometry>
-        <box size="0.29 0.03 0.024"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="right_ankle_joint"
@@ -636,12 +566,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 0.15" rpy="0 0 0" />
-      <geometry>
-        <box size="0.08 0.16 0.1"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="torso_joint"
@@ -691,12 +615,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 -0.05  0" rpy="1.5707963267948966192313216916398 0 0" />
-      <geometry>
-        <cylinder radius="0.03" length="0.04"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="left_shoulder_pitch_joint"
@@ -746,12 +664,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.04" rpy="0 0 0" />
-      <geometry>
-        <cylinder radius="0.04" length="0.01"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="left_shoulder_roll_joint"
@@ -801,12 +713,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.11" rpy="0 0 0" />
-      <geometry>
-        <cylinder radius="0.04" length="0.01"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="left_shoulder_yaw_joint"
@@ -856,12 +762,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.125 0 0" rpy="0 1.57 0" />
-      <geometry>
-        <cylinder radius="0.03" length="0.09"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="left_elbow_joint"
@@ -918,12 +818,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0.05  0" rpy="-1.5707963267948966192313216916398 0 0" />
-      <geometry>
-        <cylinder radius="0.03" length="0.04"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="right_shoulder_pitch_joint"
@@ -973,12 +867,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.04" rpy="0 0 0" />
-      <geometry>
-        <cylinder radius="0.04" length="0.01"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="right_shoulder_roll_joint"
@@ -1028,12 +916,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0 0 -0.11" rpy="0 0 0" />
-      <geometry>
-        <cylinder radius="0.04" length="0.01"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="right_shoulder_yaw_joint"
@@ -1083,12 +965,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.1 0.1 0.1 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="0.125 0 0" rpy="0 1.57 0" />
-      <geometry>
-        <cylinder radius="0.03" length="0.09"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="right_elbow_joint"
@@ -1179,15 +1055,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="1 1 1 1" />
       </material>
     </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <sphere
-          radius="0.001" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="d435_left_imager_joint"
@@ -1218,15 +1085,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="1 1 1 1" />
       </material>
     </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <sphere
-          radius="0.001" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="d435_rgb_module_joint"
@@ -1257,15 +1115,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="1 1 1 1" />
       </material>
     </visual>
-    <collision>
-      <origin
-        xyz="0 0 0"
-        rpy="0 0 0" />
-      <geometry>
-        <sphere
-          radius="0.001" />
-      </geometry>
-    </collision>
   </link>
   <joint
     name="mid360_joint"
@@ -1296,12 +1145,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.7 0.0 0.0 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.04 0.0 0.0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.11 0.03 0.02"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="left_toes_joint"
@@ -1330,12 +1173,6 @@ Stephen Brawner (brawner@gmail.com)
           rgba="0.7 0.0 0.0 1" />
       </material>
     </visual>
-    <collision>
-      <origin xyz="-0.04 0.0 0.0" rpy="0 0 0" />
-      <geometry>
-        <box size="0.11 0.03 0.02"/>
-      </geometry>
-    </collision>
   </link>
   <joint
     name="right_toes_joint"
