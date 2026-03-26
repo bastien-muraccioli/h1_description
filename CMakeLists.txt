@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.22)
 cmake_policy(SET CMP0048 NEW)
-project(h1_description)
+project(h1_description VERSION 1.0.1)
 
 if(NOT DISABLE_ROS)
   if(NOT DEFINED ENV{ROS_VERSION})
